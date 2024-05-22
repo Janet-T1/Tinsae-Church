@@ -1,34 +1,26 @@
-
+'use client'
 // import styles from './page.module.css'
 // import Video from 'next-video';
 // import videoLoop from '../../videos/earth.mp4'
 import Cards from './cards/page.js'
 import Hero from './components/Hero'
+import styled from "styled-components"
 
+
+const CanvasContainer=styled.div `
+  width: 100%;
+  height:100%; 
+  `;
 
 export default function Home() {
   return (
     <div>
-      <Hero heading="Timothy Generation" message="Here to Impact, Uplift & Inspire the Youth of this Generation"/>
+      <Hero heading="Resurrection Church of Calgary Youth" message="Here to Impact, Uplift & Inspire the Youth of this Generation"/>
       <Cards/>
     </div>
 
 
-    // <main  className="flex min-h-screen flex-col items-center justify-between p-24">
-
-        
-
-    //       <Hero/>
-    //       <Cards/>
-
-        
-
-
-
-        
-        
     
-      
     //   {/* <Video
     //     src={videoLoop}
     //     autoPlay 
@@ -39,6 +31,6 @@ export default function Home() {
     //     className={styles.video}
     //   ></Video> */}
 
-    // </main>
+   
   );
 }
