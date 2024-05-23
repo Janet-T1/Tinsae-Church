@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from 'three';
-import { OrbitControls } from "@react-three/drei"
+import { OrbitControls, Stars} from "@react-three/drei"
 import * as THREE from "three";
 import { Exo_2 } from 'next/font/google';
 
@@ -18,7 +18,9 @@ export function Earth(props) {
 
     return (
         <>
-            <ambientLight intensity={3} />
+            {/* <ambientLight intensity={3} /> */}
+            <pointLight color="#f6f3ea"  position={[2, 0, 2]} intensity={35}/>
+            <Stars radius={200} depth={50} count={7000} saturation={0} factor={4} />
             <mesh>
                 <sphereGeometry args={[1.005, 32, 32]} />
                 <meshPhongMaterial
@@ -32,7 +34,7 @@ export function Earth(props) {
             <mesh >
                 <sphereGeometry args={[1, 32, 32]} />
                 <meshPhongMaterial specularMap={specularMap} />
-                <meshStandardMaterial map={colorMap} normalMap={normalMap} />
+                <meshStandardMaterial map={colorMap} normalMap={normalMap} metalness={0.4} roughness={0.7}/>
                 <OrbitControls
                     enableZoom={true}
                     enablePen={true}
