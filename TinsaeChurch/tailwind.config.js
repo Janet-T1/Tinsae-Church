@@ -19,30 +19,13 @@ module.exports = {
       colors: {
         'primary': '#FFFFFF', 
         'secondary':'#1C1C1C',
+        'red':'#920000',
         'teritary': '#9197AE',
         'fourth': '#F02D3A'
       },
     },
   },
   plugins: [
-
-    // function ({addUtilities}) {
-    //   const newUtilities = {
-    //     ".no-scrollbar::-webkit-scrollbar": {
-    //       display: "none", 
-    //     }, 
-
-    //     ".no-scrollbar":{
-    //       "-ms-overflow-style":"none", 
-    //       "scrollbar-width":"none"
-    //     }
-
-    //   }
-
-    //   addUtilities(newUtilities); 
-    // }
-
-
 
   ],
 };
