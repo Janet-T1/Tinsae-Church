@@ -12,24 +12,24 @@ const Footer = () => {
 
             <div className='bottom-0 w-screen '>
                 {/* parent container for the footer */}
-                <div className='w-screen py-5 bg-teritary flex flex-col '>
+                <div className='w-screen pt-5 bg-black flex flex-col '>
                     {/* div parent for icons and page lists */}
-                    <ul className='flex text-primary justify-center gap-3 text-2xl '>
+                    <ul className='flex text-primary justify-center gap-3 text-xl '>
                     
                         <li><FaFacebook/></li>
                         <li><FaInstagram/></li>
                         <li><FaTiktok/></li>
                         <li><FaYoutube/></li>
                     </ul>
-                    <ul className='flex justify-center gap-5 mt-2 text-primary mb-4 text-lg font-smalltext '>
+                    <ul className='flex justify-center gap-5 mt-2 text-primary text-gray mb-4 text-md font-smalltext '>
                         <li><Link href='/'>Home</Link></li>
-                        <li><Link href='../aboutus'>Events</Link></li>
+                        <li><Link href='../aboutus'>Evangelism</Link></li>
                         <li><Link href='../events'>About Us</Link></li>
                     </ul>
                     {/* div for copyright */}
-                    <div className='bg-primary text-secondary p-1 w-screen text-center sm:text-sm text-xs '>
-                        <p>&copy; Timothy Generation, All rights reserved. </p>
-                    </div>
+                </div>
+                <div className='bg-primary text-secondary p-1 w-screen text-center sm:text-sm text-xx s '>
+                        <p>&copy; Resurrection Church of Calgary, All rights reserved. </p>
                 </div>
             </div>
         );

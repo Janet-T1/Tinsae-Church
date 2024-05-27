@@ -14,10 +14,15 @@ const CanvasContainer=styled.div `
 
 export default function Home() {
   return (
-    <div>
-      <Hero heading="Resurrection Church of Calgary Youth" message="Here to Impact, Uplift & Inspire the Youth of this Generation"/>
-      <Cards/>
-    </div>
+
+
+    <body className="no-scrollbar">
+      <div>
+        <Hero heading="Resurrection Church of Calgary Youth" message="Here to Impact, Uplift & Inspire the Youth of this Generation"/>
+        <Cards/>
+      </div>
+    </body>
+    
 
 
     
