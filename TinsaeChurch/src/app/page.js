@@ -3,10 +3,10 @@
 // import Video from 'next-video';
 // import videoLoop from '../../videos/earth.mp4'
 import Cards from './cards/page.js'
-import Hero from './components/Hero'
+
 import styled from "styled-components"
-
-
+import BgVid from "./components/BgVid"
+import ContactCard from "./components/ContactCard"
 const CanvasContainer=styled.div `
   width: 100%;
   height:100%; 
@@ -14,28 +14,10 @@ const CanvasContainer=styled.div `
 
 export default function Home() {
   return (
-
-
-    <body className="no-scrollbar">
       <div>
-        <Hero heading="Resurrection Church of Calgary Youth" message="Here to Impact, Uplift & Inspire the Youth of this Generation"/>
+        <BgVid/>
+        <ContactCard/>
         <Cards/>
       </div>
-    </body>
-    
-
-
-    
-    //   {/* <Video
-    //     src={videoLoop}
-    //     autoPlay 
-    //     muted
-    //     loop
-    //     playsInline
-    //     controls={false}
-    //     className={styles.video}
-    //   ></Video> */}
-
-   
   );
 }

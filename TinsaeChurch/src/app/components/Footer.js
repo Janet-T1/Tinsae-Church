@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                     {/* div for copyright */}
                 </div>
-                <div className='bg-primary text-secondary p-1 w-screen text-center sm:text-sm text-xx s '>
+                <div className='bg-primary text-black font-semibold p-1 w-screen text-center sm:text-sm text-xs '>
                         <p>&copy; Resurrection Church of Calgary, All rights reserved. </p>
                 </div>
             </div>

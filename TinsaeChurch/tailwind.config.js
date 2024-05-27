@@ -17,8 +17,8 @@ module.exports = {
         bigtext: ['Montserrat', 'sans-serif'],
       },
       colors: {
-        'primary': '#EFF6EE', 
-        'secondary':'#273043',
+        'primary': '#FFFFFF', 
+        'secondary':'#1C1C1C',
         'teritary': '#9197AE',
         'fourth': '#F02D3A'
       },
