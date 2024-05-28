@@ -1,6 +1,6 @@
 import Card from "../components/card";
 import friends from "../../../public/images/friends.jpg";
-import events from "../../../public/images/events.jpg";
+import bgImg from "../../../public/images/bgImg.jpeg";
 import getInvolved from "../../../public/images/getinvolved.jpg";
 
 const Page = () => {
@@ -22,12 +22,12 @@ const Page = () => {
       id: 3,
       title: "Events",
       description: "Description for Card 3",
-      imageUrl: events,
+      imageUrl: bgImg,
     },
   ];
 
   return (
-    <div className="flex gap-8 justify-center flex-col sm:flex-row mt-50 mb-50"> {/* Add mt-50 and mb-50 here */}
+    <div className="flex gap-8 justify-center flex-col sm:flex-row mt-50 mb-50 bg-secondary"> {/* Add mt-50 and mb-50 here */}
       {data.map((item) => (
         <Card
           key={item.id}
