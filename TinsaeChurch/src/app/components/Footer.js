@@ -12,7 +12,7 @@ const Footer = () => {
 
             <div className='bottom-0 w-screen '>
                 {/* parent container for the footer */}
-                <div className='w-screen pt-5 bg-black flex flex-col '>
+                <div className='w-screen pt-5 bg-black flex flex-col text-white'>
                     {/* div parent for icons and page lists */}
                     <ul className='flex text-primary justify-center gap-3 text-xl '>
                     
@@ -28,7 +28,7 @@ const Footer = () => {
                     </ul>
                     {/* div for copyright */}
                 </div>
-                <div className='bg-primary text-black font-semibold p-1 w-screen text-center sm:text-sm text-xs '>
+                <div className='bg-white text-black font-semibold p-1 w-screen text-center sm:text-sm text-xs '>
                         <p>&copy; Resurrection Church of Calgary, All rights reserved. </p>
                 </div>
             </div>

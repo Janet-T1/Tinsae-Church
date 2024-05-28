@@ -23,7 +23,7 @@ export default function Home() {
 
 
   return (
-      <div>
+      <div className="">
         <BgVid/>
         <ContactCard/>
         <Cards/>
