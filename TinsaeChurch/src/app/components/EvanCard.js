@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion"; 
 import React, { useRef } from 'react';
 
-function ContactCard() {
+function EvanCard() {
     const ref = useRef(null); 
     const { scrollYProgress } = useScroll({
         target: ref, 
@@ -14,7 +14,7 @@ function ContactCard() {
     const textY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
     return (
-        <div ref={ref} className="w-full h-screen overflow-hidden relative grid place-items-center bg-[#3589b9]">
+        <div ref={ref} className="w-full h-screen overflow-hidden relative grid place-items-center bg-[#3589b9] mb-10">
             <motion.h1 style={{ y: textY }} className="text-white text-5xl relative z-10 font-semibold uppercase w-2/3 bg-black bg-opacity-50 p-4">
                 Join us every Saturday @ City Hall from 4:00 - 6:00 pm!
             </motion.h1>
@@ -49,5 +49,5 @@ function ContactCard() {
     );
 }
 
-export default ContactCard;
+export default EvanCard;
 

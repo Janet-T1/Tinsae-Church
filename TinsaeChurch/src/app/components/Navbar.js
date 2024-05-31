@@ -38,7 +38,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div style={{ backgroundColor: `${color}` }} className="top-0 left-0 fixed w-full z-10 ease-in duration-200">
+        <div style={{ backgroundColor: `${color}` }} className="top-0 left-0 fixed w-full z-50 ease-in duration-200">
             {/* Logo */}
             <div className="m-auto p-5 pt-0 pb-0  flex justify-between items-center text-white font-smalltext text-lg">
                 <div className="font-bold">

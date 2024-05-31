@@ -1,15 +1,9 @@
 import React from 'react';
 
-const Hero = ({heading, message}) => {
+const Hero = () => {
     return (
-        <div className='flex items-center justify-center w-screen h-screen bg-fixed bg-center bg-cover bg-transparent custom-img text-primary'>
-            <div className=" absolute top-0 left-0 right-0 bottom-0 bg-black/ z-[2]" />
-            
-            <div className=" absolute p-5 text-center text-white z-[2]  ">
-                <h1 className="font-bigtext font-bold text-6xl">{heading}</h1> 
-                <h2 className="">{message}</h2>
-                
-            </div>
+        <div className=' w-screen h-1/3 hero-container bg-[] transition duration-500 ease-in-out hover:bg-green-500'>
+           
         </div>
     );
 };
