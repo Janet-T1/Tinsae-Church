@@ -1,5 +1,6 @@
 // components/ContactCard.js
 import React from 'react';
+import Link from 'next/link';
 
 function ContactCard() {
     return (
@@ -10,7 +11,7 @@ function ContactCard() {
             <div className="flex flex-col items-center bg-[#2e8ca8] p-10 w-screen font-semibold">
                 <h1 className="text-white text-5xl mb-6 ">CONTACT US HERE</h1>
                 <button className="bg-white hover:bg-[#EFEFEF]  p-3 text-smalltext text-xl font-semibold shadow-md">
-                    CONTACT CARD
+                    <Link href="/contact">CONTACT CARD</Link>
                 </button>
             </div>
         </div>
