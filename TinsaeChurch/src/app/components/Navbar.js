@@ -72,7 +72,7 @@ const Navbar = () => {
                         </button>
                         {showFormsDropdown && (
                             <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg w-40">
-                                <li className='p-2 hover:bg-gray-200'><Link href="#">Membership</Link></li>
+                                <li className='p-2 hover:bg-gray-200'><Link href="../membership">Membership</Link></li>
                                 <li className='p-2 hover:bg-gray-200'><Link href="#">Get Involved</Link></li>
                             </ul>
                         )}
@@ -88,7 +88,7 @@ const Navbar = () => {
                         <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="/">Home</Link></li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="../aboutus" >About Us</Link></li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="../evangelism">Evangelism</Link></li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="#" >Membership Form</Link></li>
+                        <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="../membership" >Membership Form</Link></li>
                     </ul>
                 </div>
             </div>
