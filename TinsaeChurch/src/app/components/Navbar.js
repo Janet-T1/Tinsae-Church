@@ -72,8 +72,8 @@ const Navbar = () => {
                         </button>
                         {showFormsDropdown && (
                             <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg w-40">
-                                <li className='p-2 hover:bg-gray-200'><Link href="../membership">Membership</Link></li>
-                                <li className='p-2 hover:bg-gray-200'><Link href="#">Get Involved</Link></li>
+                                <li onClick={toggleFormsDropdown} className='p-2 hover:bg-gray-200'><Link href="../membership">Membership</Link></li>
+                                <li onClick={toggleFormsDropdown} className='p-2 hover:bg-gray-200'><Link href="../getInvolved">Get Involved</Link></li>
                             </ul>
                         )}
                     </li>
