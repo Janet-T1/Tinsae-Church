@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaCaretDown } from 'react-icons/fa';
 
+
+// resize-none
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState('transparent');
@@ -58,7 +60,7 @@ const Navbar = () => {
                         </button>
                         {showMinistriesDropdown && (
                             <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg  w-40">
-                                <li onClick={toggleMinistriesDropdown} className='p-2 hover:bg-gray-200'><Link href="../events">Evangelism</Link></li>
+                                <li onClick={toggleMinistriesDropdown} className='p-2 hover:bg-gray-200'><Link href="../evangelism">Evangelism</Link></li>
                                 <li onClick={toggleMinistriesDropdown} className='p-2 hover:bg-gray-200'><Link href="#">Teaching</Link></li>
                             </ul>
                         )}
@@ -70,7 +72,7 @@ const Navbar = () => {
                         </button>
                         {showFormsDropdown && (
                             <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg w-40">
-                                <li className='p-2 hover:bg-gray-200'><Link href="#">Registration</Link></li>
+                                <li className='p-2 hover:bg-gray-200'><Link href="#">Membership</Link></li>
                                 <li className='p-2 hover:bg-gray-200'><Link href="#">Get Involved</Link></li>
                             </ul>
                         )}
@@ -85,7 +87,7 @@ const Navbar = () => {
                     <ul className="flex-col gap-10">
                         <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="/">Home</Link></li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="../aboutus" >About Us</Link></li>
-                        <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="../events">Events</Link></li>
+                        <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="../evangelism">Evangelism</Link></li>
                         <li onClick={handleNav} className='p-4 text-4xl hover:underline'><Link href="#" >Membership Form</Link></li>
                     </ul>
                 </div>

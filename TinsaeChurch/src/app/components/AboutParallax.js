@@ -13,7 +13,7 @@ const AboutParallax = () => {
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
 
   return (
-    <div ref={ref} className="w-full h-screen overflow-hidden relative grid place-items-center bg-[#3589b9] mb-10">
+    <div ref={ref} className="w-full h-screen overflow-hidden relative grid place-items-center bg-[#2b2b2b] mb-10">
       <motion.div className="absolute inset-0 z-0"
         style={{
           backgroundImage: 'url(/aboutUs/crossroads.jpg)',

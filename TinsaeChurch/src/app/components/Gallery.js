@@ -12,9 +12,7 @@ const Gallery = () => {
         setCurrentIndex(index);
     };
 
-    const handleCloseClick = (e) => {
-        // Close the fullscreen view if the user clicks anywhere
-        // except the navigation icons
+    const handleCloseClick = () => {
         setSelectedImage(null);
     };
 
@@ -63,12 +61,14 @@ const Gallery = () => {
                         className="absolute left-8 text-white text-3xl cursor-pointer z-50"
                         onClick={handlePrevClick}
                     />
-                    <img 
-                        src={selectedImage} 
-                        alt="Selected" 
-                        className="max-w-full max-h-full cursor-pointer"
-                        onClick={handleCloseClick}
-                    />
+                    <div className="relative w-3/4 h-2/3 flex items-center">
+                        <img 
+                            src={selectedImage} 
+                            alt="Selected" 
+                            className="w-full h-full object-contain cursor-pointer"
+                            onClick={handleCloseClick}
+                        />
+                    </div>
                     <FaArrowRight 
                         className="absolute right-8 text-white text-3xl cursor-pointer z-50"
                         onClick={handleNextClick}
@@ -80,6 +80,9 @@ const Gallery = () => {
 }
 
 export default Gallery;
+
+
+
 
 
 
