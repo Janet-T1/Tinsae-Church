@@ -27,7 +27,7 @@ const Page = () => {
   ];
 
   return (
-    <div className="flex bg-[#1d1d1d] gap-8 justify-center flex-col sm:flex-row mt-50 mb-50 bg-secondary "> {/* Add mt-50 and mb-50 here */}
+    <div className="flex bg-[#1d1d1d] gap-8 justify-center flex-col sm:flex-row mt-50 mb-50 bg-[#121211] "> {/* Add mt-50 and mb-50 here */}
       {data.map((item) => (
         <Card
           key={item.id}

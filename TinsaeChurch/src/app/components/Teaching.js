@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = () => {
+const Teaching = () => {
     return (
         <div className=' w-screen h-1/3 hero-container bg-[] transition duration-500 ease-in-out hover:bg-green-500'>
            
@@ -8,4 +8,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Teaching;

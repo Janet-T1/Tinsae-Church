@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function ContactCard() {
     return (
-        <div className="flex flex-col items-center justify-center w-screen m-0 p-10 h-1/2  bg-[#1d1d1d] ">
+        <div className="flex flex-col items-center justify-center w-screen m-0 p-10 h-1/2  bg-[#121211] ">
             <h1 className="text-white text-5xl mb-6">WATCH THE LATEST TEACHING</h1>
             <video src="/teaching.mp4" controls className="w-1/2 h-auto mb-4" />
 
