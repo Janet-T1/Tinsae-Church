@@ -11,18 +11,21 @@ const Page = () => {
       title: "Get Involved",
       description: "Find your passion in building God's Kingdom on earth.",
       imageUrl: getInvolved,
+      linkUrl : "../getInvolved"
     },
     {
       id: 2,
       title: "About Us",
       description: "Learn more about Tinsae Youth. ",
       imageUrl: friends,
+      linkUrl : "../aboutus"
     },
     {
       id: 3,
       title: "Membership Form",
       description: "Join our family. ",
       imageUrl: bgImg,
+      linkUrl: "../membership"
     },
   ];
 
@@ -34,6 +37,7 @@ const Page = () => {
           title={item.title}
           description={item.description}
           imageUrl={item.imageUrl}
+          linkUrl={item.linkUrl}
         />
       ))}
     </div>

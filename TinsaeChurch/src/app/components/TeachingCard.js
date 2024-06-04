@@ -19,11 +19,11 @@ const TeachingCard = ({ title, description, imageUrl, linkUrl }) => {
           </div>
        
           <a
-              href={linkUrl}
-              target="_blank" 
-              className="inline-block w-1/5  mb-7 item-right px-4 py-3 bg-red-800 text-white text-center w-200 font-semibold hover:bg-red-900 transition-colors"
-            >
-              Learn More
+            href={linkUrl}
+            target="_blank" 
+            className="inline-block w-1/4 mb-7 mr-10 ml-auto px-4 py-3 bg-red-800 text-white text-center font-semibold hover:bg-red-900 transition-colors"
+          >
+            Learn More
           </a>
         </div>
       </div>

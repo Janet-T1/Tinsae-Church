@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaCaretDown} from 'react-icons/fa';
-
+import { FiCross } from 'react-icons/fi'; 
 
 // resize-none
 const Navbar = () => {
@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="m-auto p-5 pt-0 pb-0  flex justify-between items-center text-white font-smalltext text-lg">
                 <div className="font-bold">
                     <Link href="/">
-                        <h1 style={{ color: `${textColor}` }}>Logo  </h1>
+                        <FiCross style={{ color: `${textColor}` }} />
                     </Link>
                 </div>
 
