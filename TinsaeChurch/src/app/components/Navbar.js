@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { FaCaretDown } from 'react-icons/fa';
+import { FaCaretDown} from 'react-icons/fa';
 
 
 // resize-none
@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="m-auto p-5 pt-0 pb-0  flex justify-between items-center text-white font-smalltext text-lg">
                 <div className="font-bold">
                     <Link href="/">
-                        <h1 style={{ color: `${textColor}` }}>Logo</h1>
+                        <h1 style={{ color: `${textColor}` }}>Logo  </h1>
                     </Link>
                 </div>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                         {showMinistriesDropdown && (
                             <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg  w-40">
                                 <li onClick={toggleMinistriesDropdown} className='p-2 hover:bg-gray-200'><Link href="../evangelism">Evangelism</Link></li>
-                                <li onClick={toggleMinistriesDropdown} className='p-2 hover:bg-gray-200'><Link href="#">Teaching</Link></li>
+                                <li onClick={toggleMinistriesDropdown} className='p-2 hover:bg-gray-200'><Link href="../teaching">Teaching</Link></li>
                             </ul>
                         )}
                     </li>
