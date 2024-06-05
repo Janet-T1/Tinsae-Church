@@ -47,7 +47,7 @@ const Navbar = () => {
                     <Link href="/">
                         <div className="flex items-center">
                             <FaCross style={{ color: `${textColor}`, fontSize: '24px' }} />
-                            <span className="ml-2">TINSAEYOUTH</span>
+                            <span style = {{color: `${textColor}`}} className="ml-2">TINSAEYOUTH</span>
                         </div>
                     </Link>
                 </div>

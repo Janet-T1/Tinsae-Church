@@ -16,15 +16,14 @@ const Footer = () => {
                     {/* div parent for icons and page lists */}
                     <ul className='flex text-primary justify-center gap-3 text-xl '>
                     
-                        <li><FaFacebook/></li>
-                        <li><FaInstagram/></li>
+                        <li><Link href="https://www.facebook.com/profile.php?id=100093639531988" target="_blank" ><FaFacebook/> </Link></li>
                         <li><FaTiktok/></li>
-                        <li><FaYoutube/></li>
+                        <li><Link href="https://www.youtube.com/@Tinsaechurch" target="_blank"> <FaYoutube/></Link></li>
                     </ul>
                     <ul className='flex justify-center gap-5 mt-2 text-primary text-gray mb-4 text-md font-smalltext '>
                         <li><Link href='/'>Home</Link></li>
-                        <li><Link href='../aboutus'>Evangelism</Link></li>
-                        <li><Link href='../events'>About Us</Link></li>
+                        <li><Link href='../evangelism'>Evangelism</Link></li>
+                        <li><Link href='../teaching'>Teachings </Link></li>
                     </ul>
                     {/* div for copyright */}
                 </div>

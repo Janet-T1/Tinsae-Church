@@ -37,10 +37,10 @@ export default function Page() {
           </Suspense>
         </Canvas>
       </CanvasContainer>
-      <div>
+      <div >
         <EarthHero />
         <EvanCard />
-        <Slider slides={SliderData} />
+        <Slider  slides={SliderData} />
       </div>
 
     </>
