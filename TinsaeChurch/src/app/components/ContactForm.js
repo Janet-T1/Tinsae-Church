@@ -33,17 +33,17 @@ const ContactForm = () => {
                         {errors.lastName && <p className="text-red-600">{errors.lastName.message}</p>}
                     </div>
                     <input
-                        {...register("email", { required: "Email is required",
+                            {...register("email", { required: "Email is required",
                             pattern: {
                                 value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
                                 message: "Invalid email address"
                             }
-                        })}
+                            })}
                         type="email"
                         placeholder="Email"
                         className="p-2 border bg-gray-100 text-black input-placeholder"
                     />
-                        {errors.email && <p className="text-red-600">{errors.email.message}</p>}
+                    {errors.email && <p className="text-red-600">{errors.email.message}</p>}
                     <input
                         {...register("subject", { required: "Subject is required" })}
                         type="text"

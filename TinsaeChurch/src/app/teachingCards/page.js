@@ -23,7 +23,7 @@ const Page = () => {
 
   return (
     <div className=" py-12 flex flex-col items-center">
-      <div className="w-3/4 text-white font-bigtext text-7xl font-bold mt-20"> 
+      <div className="w-3/4 text-white font-bigtext text-6xl font-bold mt-20"> 
         Sunday Teachings 
       </div>
 
