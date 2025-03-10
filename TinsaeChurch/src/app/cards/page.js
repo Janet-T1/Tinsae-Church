@@ -1,7 +1,7 @@
 import Card from "../components/card";
-import friends from "../../../public/images/friends.jpg";
+import friends from "../../../public/images/AboutUs.jpg";
 import bgImg from "../../../public/images/bgImg.jpeg";
-import getInvolved from "../../../public/images/getinvolved.jpg";
+import getInvolved from "../../../public/images/GetInvoled.jpg";
 
 const Page = () => {
   // Data object for the card

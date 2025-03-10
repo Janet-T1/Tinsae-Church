@@ -54,7 +54,7 @@ const Navbar = () => {
 
                 {/* Navigation Links */}
                 <ul style={{ color: `${textColor}` }} className="hidden sm:flex items-center font-bold space-x-5">
-                    <li><Link href="/" className='hover:underline p-5'>Watch Live</Link></li>
+                    <li><Link href="https://www.facebook.com/profile.php?id=100093639531988" className='hover:underline p-5'>Watch Live</Link></li>
                     <li><Link href="../aboutus" className='hover:underline p-5'>About Us</Link></li>
                     <li className='relative group p-5'>
                         <button onClick={toggleMinistriesDropdown} className='flex items-center hover:underline'>

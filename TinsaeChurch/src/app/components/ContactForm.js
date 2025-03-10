@@ -1,14 +1,28 @@
 'use client'
 import React from 'react';
-import { useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form';
 
 const ContactForm = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-    const onSubmit = data => {
-        console.log(data);
-        // Handle form submission, e.g., send data to an API or show a success message
-        reset(); 
+    const onSubmit = async (data) => {
+        try {
+            const response = await fetch("https://formspree.io/f/maneyqbl", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                alert("Message sent successfully!");
+                reset();
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Error submitting form. Please check the console for details.");
+        }
     };
 
     return (
@@ -33,12 +47,13 @@ const ContactForm = () => {
                         {errors.lastName && <p className="text-red-600">{errors.lastName.message}</p>}
                     </div>
                     <input
-                            {...register("email", { required: "Email is required",
+                        {...register("email", { 
+                            required: "Email is required",
                             pattern: {
                                 value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
                                 message: "Invalid email address"
                             }
-                            })}
+                        })}
                         type="email"
                         placeholder="Email"
                         className="p-2 border bg-gray-100 text-black input-placeholder"
@@ -50,7 +65,7 @@ const ContactForm = () => {
                         placeholder="Subject"
                         className="p-2 border bg-gray-100 text-black input-placeholder"
                     />
-                        {errors.subject && <p className="text-red-600">{errors.subject.message}</p>}
+                    {errors.subject && <p className="text-red-600">{errors.subject.message}</p>}
                     <textarea
                         {...register("message", { required: "Message is required" })}
                         placeholder="Message"
@@ -70,6 +85,3 @@ const ContactForm = () => {
 }
 
 export default ContactForm;
-
-
-
